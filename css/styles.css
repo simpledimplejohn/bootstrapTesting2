@@ -28,4 +28,14 @@ p{
   height: 100%;
   cursor: pointer;
   filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  transition: 0.3s linear; 
+}
+.row .column img:hover{
+  filter: grayscale(0) brightness(1);
+}
+@media only scren and (max-width: 600px){
+  .row .column{
+    flex: 50%;
+  }
 }
