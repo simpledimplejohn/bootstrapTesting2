@@ -23,20 +23,36 @@
       </ul>
     </div>
   </nav>
-  <div class="row" id="gallery">
+  <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
     <div class="col-12 col-sm-6 coll-lg-3">
-      <img class="w-100" src="img/DancingHousePraha.jpg">
+      <img class="w-50" src="img/DancingHousePraha.jpg" data-target="#carouselExample" data-slide-to="0">
     </div>
     <div class="col-12 col-sm-6 coll-lg-3">
-      <img class="w-100" src="img/LaTourEiffel.jpg">
+      <img class="w-50" src="img/LaTourEiffel.jpg" data-target="#carouselExample" data-slide-to="1">
     </div>
     <div class="col-12 col-sm-6 coll-lg-3">
-      <img class="w-100" src="img/MenilmontantParis1.jpg">
+      <img class="w-50" src="img/MenilmontantParis1.jpg" data-target="#carouselExample" data-slide-to="2">
     </div>
     <div class="col-12 col-sm-6 coll-lg-3">
-      <img class="w-100" src="img/TimeSquareNYC.jpg">
+      <img class="w-50" src="img/TimeSquareNYC.jpg" data-target="#carouselExample" data-slide-to="3">
     </div>
-    
+  </div>
+
+  <!--Modal script-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-lable="Close">
+            <span aria-hidden="true">x</span>
+          </button>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
